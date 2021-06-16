@@ -1,0 +1,65 @@
+
+.heading12{
+
+    margin-top: 80px;
+  text-align: center;
+    color: rgb(17, 2, 56);
+    border: 1px solid yellow;
+    background-color: rgb(214, 214, 93);
+    font-weight: bold; }
+    
+.box12{
+    width: 400px;
+    height: 450;
+    margin-left: 40px;
+    margin-top: 120px;
+    border: 1px solid #000;
+    background-color: rgb(236, 236, 82);
+    position: relative;
+    perspective: 1000px;
+}
+.box12 .box-img{
+    height: 300px;
+    transform: rotateY(0);
+    transition: all 0.5s ease-in-out 0s;
+}
+.box12:hover .box-img{
+
+transform: rotateY(-90deg);
+
+}
+.box12 .box-img img{
+    width: 100%;
+    height: 300px;
+}
+
+.box12 .content-box12{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 60px 20px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(117, 136, 11);
+    background: rgba(0, 0, 0, .7);
+    transform: rotateY(90);
+    transition: all 0.5s ease-in-out 0s;
+    z-index: -1;
+    border-radius: 12px;
+}
+.box12:hover .content-box12{
+    transform: rotateY(0);
+}
+
+.social ul li{float: left;
+list-style: none;}
+.social ul li a{
+color:#fff;
+display: block;
+font-size: 25px;
+padding: 5px;}
+.social ul li a:hover{color:#FFD500;
+}
